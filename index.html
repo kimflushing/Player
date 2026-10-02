@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Character Player</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="app">
+
+<div class="sidebar">
+
+<h1>Character</h1>
+
+<div class="character active">
+
+<img src="cover/tsubaki.png">
+
+<span>Tsubaki</span>
+
+</div>
+
+<div class="character">
+
+<img src="cover/dolores.png">
+
+<span>Dolores</span>
+
+</div>
+
+<div class="character">
+
+<img src="cover/momoka.png">
+
+<span>Momoka</span>
+
+</div>
+
+<div class="character">
+
+<img src="cover/fuyu.png">
+
+<span>Fuyu</span>
+
+</div>
+
+</div>
+
+<div class="player">
+
+<div class="albumArea">
+
+<div class="coverBox">
+
+<img id="cover"
+
+src="cover/album1.jpg">
+
+<div id="lp"></div>
+
+</div>
+
+<h2 id="title">
+
+White Silence
+
+</h2>
+
+<h3 id="artist">
+
+Tsubaki
+
+</h3>
+
+</div>
+
+<div class="controls">
+
+<div class="time">
+
+<span id="current">
+
+0:00
+
+</span>
+
+<input
+
+type="range"
+
+id="progress"
+
+value="0"
+
+min="0"
+
+max="100">
+
+<span id="duration">
+
+0:00
+
+</span>
+
+</div>
+
+<div class="buttons">
+
+<button id="prev">
+
+⏮
+
+</button>
+
+<button id="play">
+
+▶
+
+</button>
+
+<button id="next">
+
+⏭
+
+</button>
+
+</div>
+
+<div class="volume">
+
+Volume
+
+<input
+
+type="range"
+
+id="volume"
+
+min="0"
+
+max="100"
+
+value="100">
+
+</div>
+
+</div>
+
+<audio id="audio"></audio>
+
+</div>
+
+<div class="queue">
+
+<h2>
+
+Queue
+
+</h2>
+
+<div id="playlist">
+
+<div class="song active">
+
+White Silence
+
+</div>
+
+<div class="song">
+
+Midnight
+
+</div>
+
+<div class="song">
+
+Blue Rose
+
+</div>
+
+<div class="song">
+
+Memory
+
+</div>
+
+</div>
+
+<div class="lyricsButton">
+
+<button id="openLyrics">
+
+LYRICS
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="lyricsPanel">
+
+<div class="lyricsHeader">
+
+Lyrics
+
+<button id="closeLyrics">
+
+✕
+
+</button>
+
+</div>
+
+<div id="lyrics">
+
+Loading...
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
